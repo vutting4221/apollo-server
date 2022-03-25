@@ -3,12 +3,16 @@
     "prestart": "gatsby clean",
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "gatsby": "2.24.85",
     "gatsby-theme-apollo-docs": "4.5.5",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
-  }
+    "react-dom": "16.14.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
